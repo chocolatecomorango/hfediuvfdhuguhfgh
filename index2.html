@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+  div {
+  background-color:rgb(200, 170, 30);;
+  width: 700px;
+  margin-right: 500px;
+  margin-left:400px;
+
+}
+ul {
+    list-style-type: none;
+    text-align:center;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 10px 10px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #808080;
+}
+
+.active {
+    background-color: #eead2d;
+}
+h1.classe1 {
+    text-align: left;
+    font-family: Calibri;
+    color: red;
+    font-size: 45px
+}
+h1.classe2 {
+    text-align: left;
+    font-family: Calibri;
+    color: black;
+    font-size: 40px
+}
+
+p1.classe3 {
+    text-align: justify;
+    font-family: Calibri;
+    color: black;
+    font-size:20px;
+}
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;;
+    margin: 10px;
+    transition: background .3s;
+}
+
+.btnV {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    margin: 10px;
+    background: #90ee90;
+}
+.btnA {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    margin: 10px;
+    background: #add8e6;
+}
+
+.btnP {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    margin: 10px;
+    background: #808080;
+}
+
+</style>
+</head>
+<body style="background-color:rgb(200, 170, 30); text-align:center;">
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="index1.html">Dinheiro</a></li>
+
+</ul>
+
+<div><h1 class="classe1"> Dinheiro </h1></div>
+   <div> <h1 class="classe2">O dinheiro:</h1> </div>
+    <div> <p1 class="classe3"> O dinheiro representa muito a nossa necessidade e desejos, pois, por meio dele, conseguimos a subsistência, a manutenção da nossa vida, como conforto, segurança e alimentação, e também os prazeres e boas sensações que com ele é possível comprar.</p1><br><br><br>
+<img id="myImage" src="dinheiro.png" width="700" height="350" align=center>
+<br><br>
+ <button class="btn" onclick="document.getElementById('myImage').src='/imagem/dinheiro.png'">Mostrar imagem</button>
+<button class="btn" onclick="document.getElementById('myImage').src='/imagem/bill.jpg'">Ver outra imagem</button>
+     <h1 class="classe2"><br> Gosto de dinheiro:</h1>
+     <p1 class="classe3" id="demo2">O dinheiro dá felicidade.</p1>
+     <br><br>
+     <button class="btnA" type="button" onclick="document.getElementById('demo2').style.color='blue'">Mude a fonte para azul!</button>
+       <button class="btnV" type="button" onclick="document.getElementById('demo2').style.color='green'">Mude a fonte para verde!</button>
+              <button class="btnP" type="button" onclick="document.getElementById('demo2').style.color='black'">Mude a fonte para preto!</button>
+     <h1 class="classe2"> Eu amo dinheiro</h1>
+     <p1 class="classe3" id="demo1">"(O dinheiro) torna você mais afinado com seus próprios interesses e seu próprio bem-estar", ele diz. "De certa forma, isso o isola de outras pessoas, psicologicamente e materialmente. Você prioriza suas necessidades e objetivos e fica menos conectado às pessoas ao seu redor. </p1><br><br>
+<button class="btn" type="button" onclick="document.getElementById('demo1').style.fontSize='20px'">Diminua a fonte!</button>
+
+<button class="btn" type="button" onclick="document.getElementById('demo1').style.fontSize='45px'">Aumente a fonte!</button><br><br><br><br>
+
+     </div>
+   
+</body>
+</html>
